@@ -1,10 +1,14 @@
+/*Шрифты*/
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+
+/*Переменные*/
 :root {
     --gutter: 20px;
 }
 
 
+/*Глобальные стили*/
 html {
     box-sizing: border-box;
 }
@@ -30,6 +34,10 @@ h2 {
     font-size: 50px;
 }
 
+img {
+    width: 95%;
+}
+
 .container {
     max-width: 1370px;
     width: 100%;
@@ -37,7 +45,7 @@ h2 {
 }
 
 
-
+/*Хедер начало*/
 .header {
     min-height: 895px;
     background-image: url(/learn_project_2/img/BG.png);
@@ -73,18 +81,16 @@ h2 {
     cursor: pointer;
     font-size: 20px;
 }
+/*Хедер конец*/
 
 
-
-
-
-.how-it-works {
-    padding-top: 150px;
-}
-
+/*Блок с карточками начало*/
 .how-it-works p {
     font-size: 20px;
     color: #424242;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    margin: 0;
 }
 
 
@@ -94,11 +100,19 @@ h2 {
 }
 
 .top-text h2 {
-    margin-right: 60px;
+    margin:0 60px 0 0;
+
+}
+
+.top-text p {
+    padding: 0;
 }
 
 .cards-block {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
 .card {
@@ -132,8 +146,17 @@ h2 {
     left: 120px;
 }
 
+.item2 {
+    padding-top: 250px;
+}
+
+.item3 {
+    padding-top: 50px;
+}
+/*Блок с карточками конец*/
 
 
+/* Футер начало */
 .footer {
     background-color: #245852;
     padding: 95px;
@@ -166,10 +189,10 @@ h2 {
 .footer ul li a:hover {
     opacity: 0.8;
 }
+/* Футер конец */
 
 
-
-
+/*Сетка начло*/
 .col-12 {
     width: calc(100% - 20px);
 }
@@ -197,6 +220,7 @@ h2 {
 .col-1 {
     width: calc(8.33% - 20px);
 }
+/*Сетка конец*/
 
 
 /*До 992px*/
@@ -222,6 +246,8 @@ h2 {
         width: calc(16.66% - var(--gutter));
     }
 
+
+    /*Хедер начало*/
     .header p,
     .header h1,
     .header button {
@@ -236,6 +262,34 @@ h2 {
     .header button {
         padding: 20px 20px;
     }
+    /*Хедер конец*/
+
+    .top-text h2 {
+        margin: 0;
+    }
+    .col-5 {
+    }
+    .col-6 {
+    }
+    .cards-block {
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 0 auto;
+    }
+    .item1 {
+    }
+    .number {
+    }
+    .item2 {
+    }
+    .item3 {
+    }
+    .h4-last {
+    }
+    
+    
+
 
 }
 
@@ -256,6 +310,10 @@ h2 {
 
     .header button {
         padding: 20px 10px;
+    }
+
+    .top-text {
+        flex-wrap: wrap;
     }
 
 }
