@@ -36,6 +36,20 @@ h2 {
 
 img {
     width: 95%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+button {
+    height: 65px;
+    border-radius: 4px;
+    padding: 20px 30px;
+    background-color: #01996D;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 .container {
@@ -43,6 +57,50 @@ img {
     width: 100%;
     margin: 0 auto;
 }
+
+
+/*Топ меню начало*/
+.top-menu {
+    border-bottom: 1px solid #D6D6D6;
+    font-size: 20px;
+    font-weight:lighter;
+    
+}
+
+.top-menu-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+img.top-logo{
+    max-width: 80px;
+    display: inline;
+    margin: auto 0;
+}
+.ul-menu {
+    list-style-type: none;
+}
+
+.ul-menu li {
+    display: inline;
+    margin-right: 75px;
+}
+
+.cta {
+    display: flex;
+}
+.p-cta {
+    margin-right: 35px;
+}
+.cta-button {
+    padding: 0px 30px;
+    max-height: 50px;
+    margin: auto;
+
+}
+/*Топ меню конец*/
 
 
 /*Хедер начало*/
@@ -99,13 +157,15 @@ img {
     display: flex;
 }
 
-.top-text h2 {
+.h2-top-text {
     margin:0 60px 0 0;
+    max-width: 585px;
 
 }
 
-.top-text p {
+.p-top-text {
     padding: 0;
+    max-width:671px;
 }
 
 .cards-block {
@@ -164,6 +224,8 @@ img {
 
 .footer .logo {
     margin-bottom: 60px;
+    max-width: 120px;
+    display: inline;
 }
 
 .footer ul {
@@ -192,62 +254,14 @@ img {
 /* Футер конец */
 
 
-/*Сетка начло*/
-.col-12 {
-    width: calc(100% - 20px);
-}
-
-.col-6 {
-    width: calc(50% - 20px);
-}
-
-.col-5 {
-    width: calc(44% - 20px);
-}
-
-.col-4 {
-    width: calc(33.33% - 20px);
-}
-
-.col-3 {
-    width: calc(25% - 20px);
-}
-
-.col-2 {
-    width: calc(16.66% - 20px);
-}
-
-.col-1 {
-    width: calc(8.33% - 20px);
-}
-/*Сетка конец*/
-
-
 /*До 992px*/
 @media screen and (max-width:992px) {
-
-    .col-md-12 {
-        width: calc(100% - var(--gutter));
-    }
-
-    .col-md-8 {
-        width: calc(66.66% - var(--gutter));
-    }
-
-    .col-md-6 {
-        width: calc(50% - var(--gutter));
-    }
-
-    .col-md-4 {
-        width: calc(33.33% - var(--gutter));
-    }
-
-    .col-md-2 {
-        width: calc(16.66% - var(--gutter));
-    }
-
-
     /*Хедер начало*/
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .header p,
     .header h1,
     .header button {
@@ -267,53 +281,36 @@ img {
     .top-text h2 {
         margin: 0;
     }
-    .col-5 {
-    }
-    .col-6 {
-    }
     .cards-block {
         flex-wrap: wrap;
     }
-    .card {
-        margin: 0 auto;
+
+    .cards-block .card {
+        margin: 0;
     }
-    .item1 {
-    }
-    .number {
-    }
+
     .item2 {
+        padding-top: 0;
     }
     .item3 {
+        padding-top: 0;
     }
-    .h4-last {
-    }
-    
-    
-
 
 }
 
 
 /*До 768px*/
 @media screen and (max-width: 768px) {
-    .col-sm-12 {
-        width: calc(100% - var(--gutter));
-    }
-
-    .col-sm-8 {
-        width: calc(66.66% - var(--gutter));
-    }
-
-    .col-sm-6 {
-        width: calc(50% - var(--gutter));
-    }
-
     .header button {
         padding: 20px 10px;
     }
 
     .top-text {
         flex-wrap: wrap;
+    }
+
+    .card {
+        width: 100%;
     }
 
 }
@@ -324,11 +321,4 @@ img {
 /*До 576px*/
 @media screen and (max-width: 576px) {
 
-    .col-es-8 {
-        width: calc(66.66% - var(--gutter));
-    }
-
-    .col-es-12 {
-        width: calc(100% - var(--gutter))
-    }
 }
