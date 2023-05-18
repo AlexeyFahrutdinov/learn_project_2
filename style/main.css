@@ -263,43 +263,51 @@ img.top-logo {
     padding-bottom: 170px;
 
 }
+
 .content-img-inner {
     display: flex;
 }
-.left-img-card {
-    margin-right: 80px;
-}
+
+
 .background {
     position: relative;
-    width: 675px;
+    width: 573px;
     height: 573px;
-    background-color:rgba(1, 153, 109, 0.2);
+    background-color: rgba(1, 153, 109, 0.2);
     border-radius: 18px;
+    margin-left: 9%;
+    margin-right: 160px;
+
 }
+
 .big-img {
-    position:absolute;
+    position: absolute;
     bottom: 0px;
     right: 18%;
     width: 65%;
 }
+
 .card-face {
     position: absolute;
     background-color: white;
-    width: 295px;
-    height: 295px;
+    max-width: 295px;
+    max-height: 295px;
     left: -9%;
     bottom: -13%;
     filter: drop-shadow(0px 3px 18px rgba(165, 165, 165, 0.25));
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .avatar-block {
     margin: 0 auto;
     text-align: center;
 }
+
 .avatar-block p {
     font-size: 15px;
 }
+
 .people-name {
     font-size: 12px;
 }
@@ -307,10 +315,10 @@ img.top-logo {
 
 .grey-line {
     width: 110px;
-height: 0.75px;
-background-color: black;
-margin: 0 auto;
-margin-bottom: 15px;
+    height: 0.75px;
+    background-color: black;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .circle {
@@ -318,16 +326,15 @@ margin-bottom: 15px;
     width: 60px;
     height: 60px;
     margin: 0 auto;
-    background-color:rgba(1, 153, 109, 0.2);
+    background-color: rgba(1, 153, 109, 0.2);
     border-radius: 50%;
-    z-index: 4;
 }
+
 .circle-img {
-    background-color:rgba(1, 153, 109, 0.2);
+    background-color: rgba(1, 153, 109, 0.2);
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    z-index: 3;
     bottom: 10%;
     right: 10%;
 }
@@ -352,9 +359,6 @@ margin-bottom: 15px;
     font-size: 11px;
     margin-bottom: 16px;
 }
-.li-mini-card:nth-last-child(1) {
-    margin-bottom: 0;
-}
 
 .right-content {
     max-width: 585px;
@@ -371,7 +375,7 @@ margin-bottom: 15px;
     max-width: 530px;
 }
 
-p.p-right-content  {
+p.p-right-content {
     font-size: 25px;
     font-weight: 600;
 
@@ -493,20 +497,24 @@ p.p-right-content  {
         padding-top: 0;
     }
 
+
     /*Блок с видео контентом начало*/
     .content-video-inner {
         flex-wrap: wrap;
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .left-content {
         max-width: 100%;
         margin: 0 auto 30px;
         text-align: center;
     }
+
     .left-content h2 {
         margin-bottom: 10px;
     }
+
     .left-content p {
         display: inline;
         margin-right: 20px;
@@ -515,7 +523,39 @@ p.p-right-content  {
     .right-video {
         max-width: 100%;
     }
+
     /*Блок с видео контентом конец*/
+
+
+    /*Блок с картинкой и контентом начало*/
+    .content-img {
+        padding-top: 100px;
+        padding-bottom: 150px;
+
+    }
+
+    .content-img-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .background {
+        margin-bottom: 14%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .left-img-card {
+        margin: 0 auto;
+    }
+
+    .right-content {
+        margin: 0 auto;
+
+    }
+
+    /*Блок с картинкой и карточками конец*/
+
 
 }
 
@@ -569,6 +609,17 @@ p.p-right-content  {
         width: 100%;
     }
 
+    .content-img {
+        padding-top: 80px;
+        padding-bottom: 120px;
+
+    }
+
+    .background {
+        width: 500px;
+        height: 500px;
+    }
+
 }
 
 
@@ -576,14 +627,45 @@ p.p-right-content  {
 
 /*До 576px*/
 @media screen and (max-width: 576px) {
-        /*Блок с видео контентом начало*/   
+    /*Блок с видео контентом начало*/
 
-        .left-content p {
-            display: block;
-        }
-    
-        .right-video {
-            max-width: 100%;
-        }
-        /*Блок с видео контентом конец*/
+    .left-content p {
+        display: block;
+    }
+
+    .right-video {
+        max-width: 100%;
+    }
+
+    /*Блок с видео контентом конец*/
+    .content-img {
+        padding-top: 50px;
+        padding-bottom: 70px;
+
+    }
+
+    .background {
+        width: 400px;
+        height: 400px;
+    }
+
+    .card-face {
+        bottom: -320px;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .content-img {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .background {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 350px;
+    }
 }
